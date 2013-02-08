@@ -1,0 +1,47 @@
+/* This is where the data is called and styled. */
+/* Uncomment for use.                           */
+
+#data-1 {
+  [zoom>2] {
+  polygon-fill: @red;
+  /*line-color: #ccc;
+  line-width: 0.5;
+  polygon-opacity: 0.75;*/
+    }
+  }
+
+#data-2 {
+  [zoom>2] {
+  polygon-fill: @yellow;
+  /*line-color: #ccc;
+  line-width: 0.5;
+  polygon-opacity: 0.75;*/
+    }
+  }
+
+#data-3 {
+  [zoom>2] {
+  polygon-fill: @green;
+  /*line-color: #ccc;
+  line-width: 0.5;
+  polygon-opacity: 0.75;*/
+    }
+  }
+
+#data-4 {
+  [zoom>2] {
+  polygon-fill: @lightteal;
+  /*line-color: #ccc;
+  line-width: 0.5;
+  polygon-opacity: 0.75;*/
+    }
+  }
+
+#data-5 {
+  [zoom>2] {
+  polygon-fill: @indigo;
+  /*line-color: #ccc;
+  line-width: 0.5;
+  polygon-opacity: 0.75;*/
+    }
+  }

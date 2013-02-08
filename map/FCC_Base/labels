@@ -1,0 +1,78 @@
+@serif:"Times New Roman Regular","FreeSerif Medium","DejaVu Serif Book";
+@serif_italic:"Times New Roman Italic","FreeSerif Italic","DejaVu Serif Italic";
+@sans:"Arial Regular","Liberation Sans Regular","DejaVu Sans Book";
+@sans-bold:"Arial Bold","Liberation Sans Bold","DejaVu Sans Bold";
+
+/* state colors */
+@state-name:#727272;
+
+#state-name[ISO='USA'][zoom>3]
+{
+  text-name:"[Abbrev]";
+  text-face-name:@sans;
+  text-size:9;
+  text-character-spacing:2;
+  text-fill:@state-name;
+  text-allow-overlap:true;
+  text-placement:point; /*location of text*/
+  /*text-placement-type:simple;help avoid overlaps*/
+  text-wrap-width:10;
+  /*text-halo-radius:1;
+  text-halo-fill:rgba(255,255,255,0.75);*/
+}
+#state-name[ISO='USA'][zoom>4]
+{
+  text-name:"[Postal]";
+  text-face-name:@sans;
+  text-size:14;
+  text-character-spacing:3;
+  text-fill:fadeout(@state-name, 80%);
+  text-allow-overlap:true;
+  text-placement-type:simple;
+  /*text-halo-radius:1;
+  text-halo-fill:rgba(255,255,255,0.75);*/
+}
+#state-name[ISO='USA'][zoom>5]
+{
+  text-name:"[Postal]";
+  text-face-name:@sans-bold;
+  text-size:28;
+  text-fill:fadeout(@state-name, 85%);
+  text-allow-overlap:true;
+  /*text-halo-radius:1;
+  text-halo-fill:rgba(255,255,255,0.75);*/
+}
+#state-name[ISO='USA'][zoom>6]
+{
+  text-name:"[NAME_1]";
+  text-face-name:@sans-bold;
+  text-size:32;
+  text-fill:fadeout(@state-name, 90%);
+  /*text-halo-radius:1;
+  text-halo-fill:rgba(255,255,255,0.75);*/
+}
+
+#state-name[ISO='USA'][zoom>7]
+{
+  text-name:"[NAME_1]";
+  text-face-name:@sans-bold;
+  text-size:40;
+  text-fill:fadeout(@state-name, 85%);
+  /*text-halo-radius:1;
+  text-halo-fill:rgba(255,255,255,0.75);*/
+}
+
+/* city colors */
+@city-name:#727272;
+
+#city[SOV_A3='USA'][SCALERANK=1][zoom>4],
+#city[SOV_A3='USA'][SCALERANK=3][zoom>5],
+#city[SOV_A3='USA'][SCALERANK>=4][zoom>6],
+{
+  text-name:"[NAME]";
+  text-face-name:@sans-bold;
+  text-size:9;
+  text-fill:fadeout(@city-name, 35%);
+  text-halo-radius:1;
+  text-halo-fill:rgba(255,255,255,0.75);
+}
